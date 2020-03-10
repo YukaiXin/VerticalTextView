@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.example.vtextview.VerticalTextView
+        android:id="@+id/paintView"
+        android:background="@color/colorPrimary"
+        android:layout_marginStart="100dp"
+        android:layout_width="30dp"
+        android:layout_height="80dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridView
+            android:id="@+id/listview"
+            android:horizontalSpacing="2dp"
+            android:numColumns="8"
+            android:padding="8dp"
+            android:verticalSpacing="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</LinearLayout>
